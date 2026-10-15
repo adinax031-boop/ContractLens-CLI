@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contractlens-cli"
+version = "1.0.0"
+description = "Local OpenAPI compatibility checks with actionable HTML reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "ContractLens contributors"}]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+contractlens = "contractlens:main"
+
+[project.urls]
+Repository = "https://github.com/adinax031-boop/ContractLens-CLI"
+
+[tool.setuptools]
+py-modules = ["contractlens"]
